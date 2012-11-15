@@ -1,0 +1,7 @@
+export(DMlatticeOptions)
+export(getContrasts)
+export(readContrasts)
+export(RemoveNAColumns)
+export(RemoveNARows)
+export(rmlike)
+export(survtable)

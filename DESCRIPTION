@@ -1,0 +1,9 @@
+Package: Dmisc2
+Title: Dieter Menne's misc functions
+Version: 0.1.0
+Depends: stringr, lattice, RColorBrewer
+Suggests: RODBC, survival,testthat,gmodels,nlme
+Author: Dieter Menne <dieter.menne@menne-biomed.de>
+Description: For latex-related functions of the old Dmisc package, see Dlatex
+Maintainer: Dieter Menne<dieter.menne@menne-biomed.de>
+License: MIT

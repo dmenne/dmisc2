@@ -1,0 +1,6 @@
+library(testthat)
+library(RODBC)
+library(stringr)
+library(nlme)
+library(gmodels)
+test_package("Dmisc2")
