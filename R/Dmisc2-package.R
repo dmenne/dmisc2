@@ -9,6 +9,10 @@
 #' @docType package
 #' @author Dieter Menne, \email{dieter.menne@@menne-biomed.de}
 #' @keywords print misc
+#' @import stringr
+#' @import lattice
+#' @import RColorBrewer
+
 NULL
 
 
