@@ -1,7 +1,7 @@
 #' @title Plotting palettes
-#' 
 #' @description List of palettes
-#' @param 
+#' @param palette a palette
+#' @param name x axis label
 #' @examples
 #' pal(DMPalette("greenmono"))
 #' Palettes = DMPalette()
@@ -18,6 +18,7 @@ pal <- function(palette,name=""){
   invisible(NULL)
 }
 
+#' @title Special palettes
 #' @param palette Name of palette. When omitted, returns names
 #' @export
 DMPalette <-function(palette=NULL){

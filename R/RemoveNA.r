@@ -1,8 +1,7 @@
-#' Removes columns or rows in a data frame that are only NA
-#' 
+#' @title Removes NA columns or rows in a data frame
+#' @description
 #' RemoveNARows is different from na.omit, because it removes only rows that
 #' are completely NA
-#' 
 #' 
 #' @aliases RemoveNAColums RemoveNARows
 #' @param x a data frame
@@ -11,9 +10,6 @@
 #' @export RemoveNARows
 #' @author Dieter Menne, \email{dieter.menne@@menne-biomed.de}
 #' @keywords misc
-#' 
-#' 
-#' 
 
 RemoveNAColumns = function(x) {
   x[,!unlist(lapply(x,function(y) all(is.na(y)|str_trim(y)=="" )))]

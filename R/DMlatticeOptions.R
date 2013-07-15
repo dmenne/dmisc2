@@ -68,11 +68,11 @@
   lattice.options(default.theme=ltheme)
 }  
 
-library(lattice)
-library(latticeExtra)
-display.brewer.all(8)
+#library(lattice)
+#library(latticeExtra)
+#display.brewer.all(8)
 #DMlatticeOptions(brewer.pal(4,"Set1"),brewer.pal(6,"Set1"))
 #DMlatticeOptions(NULL,brewer.pal(6,"Set1"))
 #DMlatticeOptions()
-DMlatticeOptions(transparent.strip=TRUE)
-show.settings()
+#DMlatticeOptions(transparent.strip=TRUE)
+#show.settings()
