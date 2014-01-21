@@ -1,6 +1,11 @@
 Dmisc2
 ===========================================
 
+To install on R:
+
+devtools::install_bitbucket("dmisc2","dmenne")
+
+
 Dieter Menne   
 Menne Biomed Consulting Tübingen, Germany    
 http://www.menne-biomed.de   
