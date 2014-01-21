@@ -26,6 +26,7 @@
 #'  fit <- survfit(Surv(time,status)~rx, data=colon)
 #'  ggkm(fit, timeby=500)
 #' }
+#' @import ggplot2
 #' @export
 ggkm <- function(sfit, 
                  table = TRUE, returns = FALSE,
@@ -33,18 +34,7 @@ ggkm <- function(sfit,
                  ystratalabs = NULL, ystrataname = NULL,
                  timeby = 100, main = "Kaplan-Meier Plot",
                  pval = TRUE, ...) {
-  if (FALSE){ # Debut
-    table = TRUE
-    returns = FALSE
-    xlabs = "Time"
-    ylabs = "survival probability"
-    ystratalabs = NULL
-    ystrataname = NULL
-    timeby = 100
-    main = "Kaplan-Meier Plot"
-    pval = TRUE
-  }
-  #surv = NULL ; n.risk = NULL # avoid notes
+  surv = NULL ; n.risk = NULL # avoid notes
   if(is.null(ystratalabs)) {
     ystratalabs <- as.character(levels(summary(sfit)$strata))
   }
@@ -69,7 +59,7 @@ ggkm <- function(sfit,
     theme(legend.position = c(ifelse(m < 10, .28, .35), ifelse(d < 4, .25, .35))) +
     theme(legend.key = element_rect(colour = NA)) +
     labs(linetype = ystrataname) +
-    theme(plot.margin = unit(c(0, 1, .5, ifelse(m < 10, 1.5, 2.5)), "lines")) +
+    theme(plot.margin = grid::unit(c(0, 1, .5, ifelse(m < 10, 1.5, 2.5)), "lines")) +
     labs(title= main)
   ## Create a blank plot for place-holding
   ## .df <- data.frame()
@@ -108,17 +98,18 @@ ggkm <- function(sfit,
     data.table <- data.table + theme(legend.position = "none") +
       xlab(NULL) + ylab(NULL)
     data.table <- data.table +
-      theme(plot.margin = unit(c(-1.5, 1, 0.1, ifelse(m < 10, 2.5, 3.5)-0.28 * m), "lines"))
+      theme(plot.margin = grid::unit(c(-1.5, 1, 0.1, ifelse(m < 10, 2.5, 3.5)-0.28 * m), "lines"))
     ## Plotting the graphs
     #p <- ggplotGrob(p)
     #p <- addGrob(p, textGrob(x = unit(.8, "npc"), y = unit(.25, "npc"), label = pvaltxt,
     #gp = gpar(fontsize = 12)))
     grid.arrange(p, blank.pic, data.table,
                  clip = FALSE, nrow = 3, ncol = 1,
-                 heights = unit(c(2, .1, .25),c("null", "null", "null")))
+                 heights = grid::unit(c(2, .1, .25),c("null", "null", "null")))
     if(returns) {
       a <- arrangeGrob(p, blank.pic, data.table, clip = FALSE,
-                       nrow = 3, ncol = 1, heights = unit(c(2, .1, .25),c("null", "null", "null")))
+                       nrow = 3, ncol = 1, 
+                       heights = grid::unit(c(2, .1, .25),c("null", "null", "null")))
       return(a)
     }
   }
