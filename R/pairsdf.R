@@ -6,12 +6,15 @@
 #' @param abbr allow abbreviated labels
 #' @param abbr.len lenght of abbreviated labels
 #' @export pairsdf
-#' @author Biostattmat, \email{http://biostatmatt.com/archives/2398}
+#' @author Biostattmat, \url{http://biostatmatt.com/archives/2398}
 #' @examples
 #' require(MASS)
-#' pairsdf(coop)
-#' pairsdf(farms)
-
+#' par(mar=c(0,0,0,0)) # Much less whitespace
+#' par(mar=c(1,1,1,1)) # Much less whitespace
+#' pairsdf(coop[,1:3])
+#' pairsdf(farms[,1:3])
+#' par(mar=c(1,1,1,1))
+#' pairsdf(coop[,2:4])
 pairsdf <- function(df, abbr = TRUE, abbr.len = 4) {
   par(mfrow = rep(length(df), 2))
   for (row in 1:length(df)) {
@@ -32,8 +35,8 @@ pairsdf <- function(df, abbr = TRUE, abbr.len = 4) {
         plot(c(0, 1), c(0, 1), type = "n", xaxt = "n", 
              yaxt = "n", bty = "n", xlab = "", ylab = "", 
              main = "")
-        text(x = 0.5, y = 0.5, labels = cnm, adj = c(0.5, 
-                                                     0.5), cex = 2)
+        text(x = 0.5, y = 0.5, labels = cnm, 
+             adj = c(0.5, 0.5), cex = 2)
       }
       else {
         iscf <- is.factor(xc)

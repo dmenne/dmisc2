@@ -15,8 +15,8 @@ dieter.menne@menne-biomed.de
 Auxillary functions, some from Stack Exchange and r-help postings.
 For some of these functions, better alternatives are meanwhile available.
 
-* Construct contrast in Excel files
-* Kaplan-Meier with ggplot2
+* Construct contrasts in Excel files
+* Kaplan-Meier with ggplot2 (Abhijit Dasgupta, Gil Tomas)
 * Kruschke Highest Density
 * Printing survival tables
 * Pair plots splom type with categorical
