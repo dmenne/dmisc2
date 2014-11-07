@@ -3,7 +3,7 @@
 #' RemoveNARows is different from na.omit, because it removes only rows that
 #' are completely NA
 #' 
-#' @aliases RemoveNAColums RemoveNARows
+#' @aliases RemoveNAColumns RemoveNARows
 #' @param x a data frame
 #' @return A data frame with removed columns or rows that are all-NA removed
 #' @export RemoveNAColumns
