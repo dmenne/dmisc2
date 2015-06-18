@@ -1,5 +1,5 @@
 #' Dieter's misc functions
-#' 
+#'  
 #'  For latex-related functions of the old Dmisc package, see Dlatex
 #' 
 #' \tabular{ll}{ Package: \tab Dmisc\cr Type: \tab Package\cr Version: \tab
@@ -12,6 +12,13 @@
 #' @import stringr
 #' @import lattice
 #' @import RColorBrewer
+#' @import ggplot2  
+#' @import gmodels 
+#' @import grid
+#' @import plyr 
+#' @import survival 
+#' @import RODBC
+
 NULL
 
 

@@ -1,10 +1,24 @@
 Package: Dmisc2
 Title: Dieter Menne's misc functions
-Version: 0.2.0
-Imports: stringr, lattice, RColorBrewer, ggplot2, grid,plyr, gridExtra
-Suggests: RODBC, testthat,gmodels,nlme, latticeExtra,MASS,  survival
+Version: 0.3.1
+Imports: 
+         ggplot2, 
+         gmodels, 
+         grid,
+         gridExtra,
+         lattice, 
+         plyr, 
+         RColorBrewer, 
+         stringr, 
+         survival,
+         RODBC
+Suggests: 
+         MASS,  
+         nlme, 
+         latticeExtra,
+         testthat 
 Author: Dieter Menne <dieter.menne@menne-biomed.de>
-Description: For latex-related functions of the old Dmisc package, see Dlatex
+Description: For latex-related functions of the old Dmisc package, see Dlatex.
 Maintainer: Dieter Menne<dieter.menne@menne-biomed.de>
 License: GPL-2
 Roxygen: list(wrap = FALSE)

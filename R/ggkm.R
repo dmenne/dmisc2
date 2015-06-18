@@ -18,7 +18,6 @@
 #' data(colon)
 #' fit <- survfit(Surv(time,status)~rx, data=colon)
 #' ggkm(fit, timeby=500)
-#' @import ggplot2 gridExtra
 #' @export
 ggkm <- function(sfit, returns = FALSE,
                  xlabs = "Time", ylabs = "survival probability",
