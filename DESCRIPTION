@@ -1,6 +1,6 @@
 Package: Dmisc2
 Title: Dieter Menne's Misc Functions
-Version: 0.3.2
+Version: 0.3.3
 Imports: 
          ggplot2, 
          gmodels, 
@@ -15,7 +15,8 @@ Suggests:
          MASS,  
          nlme, 
          latticeExtra,
-         testthat 
+         testthat,
+         RODBC
 Author: Dieter Menne <dieter.menne@menne-biomed.de>
 Description: For latex-related functions of the old Dmisc package, see Dlatex.
 Maintainer: Dieter Menne<dieter.menne@menne-biomed.de>

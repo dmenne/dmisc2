@@ -17,7 +17,6 @@
 #' @import grid
 #' @import plyr 
 #' @import survival 
-#' @import RODBC
 
 NULL
 
