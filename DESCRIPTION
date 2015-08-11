@@ -1,6 +1,6 @@
 Package: Dmisc2
-Title: Dieter Menne's misc functions
-Version: 0.3.1
+Title: Dieter Menne's Misc Functions
+Version: 0.3.2
 Imports: 
          ggplot2, 
          gmodels, 
@@ -10,8 +10,7 @@ Imports:
          plyr, 
          RColorBrewer, 
          stringr, 
-         survival,
-         RODBC
+         survival
 Suggests: 
          MASS,  
          nlme, 
