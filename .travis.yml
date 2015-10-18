@@ -19,9 +19,10 @@ addons:
     sources:
     - r-packages-precise
     packages:
-    - r-base-dev	
+    - r-base-dev
     - r-recommended
     - pandoc
+    - libcurl
 
 # cache local R libraries directory:
 cache:
