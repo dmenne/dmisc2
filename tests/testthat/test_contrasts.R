@@ -3,6 +3,7 @@ excelfile = system.file("extdata", "contrasts.xlsx", package = "Dmisc2")
 cname = "peripostinterval"
 
 test_that("Reading valid file with readContrast returns contrast table", {
+  skip_on_travis()
   ct = readContrasts(cname,excelfile)
   expect_equal(nrow(ct),6)
   expect_equal(ncol(ct),9)
@@ -10,16 +11,19 @@ test_that("Reading valid file with readContrast returns contrast table", {
 })
 
 test_that("Reading invalid file name throws", {
+  skip_on_travis()
   expect_error(readContrasts(cname,str_c(excelfile,"xxxx")),"not found")
   expect_error(getContrasts(cname,str_c(excelfile,"xxxx")),"not found")
 })
 
 test_that("Reading invalid range name throws", {
+  skip_on_travis()
   expect_error(readContrasts("blub",excelfile),"Range blub not found")
   expect_error(getContrasts("blub",excelfile),"Range blub not found")
 })
 
 test_that("Reading valid file with getContrast returns contrast table with attributes", {
+  skip_on_travis()
   ct = getContrasts(cname,excelfile)
   expect_equal(attr(ct,"varnames"),c("peri","post","interval"))
   vars = attr(ct,"vars")
@@ -30,6 +34,7 @@ test_that("Reading valid file with getContrast returns contrast table with attri
 
 
 test_that("Using gmodels::estimable gives contrasts and confidence intervals", {
+  skip_on_travis()
   options(digits=3)
   set.seed(4711)
   d = expand.grid(subject=LETTERS[1:8],
