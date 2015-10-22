@@ -1,6 +1,12 @@
+# This must be run in 32-bit mode when no ODBC-driver for 64 bit 
+# is installed as it is in most Office environments
 context("Reading Excel contrast tables")
 excelfile = system.file("extdata", "contrasts.xlsx", package = "Dmisc2")
 cname = "peripostinterval"
+
+test_that("Excel test file exists", {
+  expect_true(file.exists(excelfile))
+})
 
 test_that("Reading valid file with readContrast returns contrast table", {
   skip_on_travis()
