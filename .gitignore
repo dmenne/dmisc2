@@ -3,3 +3,5 @@
 .RData
 man
 Thumbs.db
+*.ico
+desktop.ini
