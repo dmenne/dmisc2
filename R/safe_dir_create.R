@@ -1,5 +1,5 @@
 #' @title Creates a directory if it does not exist
-#'
+#' @description Raises if creation was not successful
 #' @param path path to the directory to be created
 #' @return TRUE if the directory was created, FALSE if it already existed,
 #' exception if the directory could not be created

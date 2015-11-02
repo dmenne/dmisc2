@@ -21,7 +21,8 @@ pal <- function(palette,name = "") {
 }
 
 #' @title Special palettes
-#' @param palette Name of palette. When omitted, returns names
+#' @description Some fixed palettes
+#' @param palette Name of palette. When omitted, returns names of available palettess
 #' @export
 DMPalette <- function(palette = NULL) {
   if (is.null(palette))
