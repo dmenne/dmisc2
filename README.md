@@ -22,8 +22,7 @@ For some of these functions, better alternatives are meanwhile available.
 * Construct contrasts in Excel files (not tested on travis)
 * Kaplan-Meier with ggplot2 (Abhijit Dasgupta, Gil Tomas)
 * Kruschke Highest Density
-* Printing survival tables
-* Pair plots splom type with categorical
+* Pair plots splom type with categorical (http://biostatmatt.com/archives/2398)
 * DM's default lattice settings
 * lattice panel with paging (Gabor Grothendiek)
 

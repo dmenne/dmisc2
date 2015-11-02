@@ -6,7 +6,7 @@
 #' @param abbr allow abbreviated labels
 #' @param abbr.len lenght of abbreviated labels
 #' @export pairsdf
-#' @author Biostattmat, \url{http://biostatmatt.com/archives/2398}
+#' @author Biostatmat, \url{http://biostatmatt.com/archives/2398}
 #' @examples
 #' require(MASS)
 #' par(mar=c(0,0,0,0)) # Much less whitespace
