@@ -7,7 +7,9 @@ Dmisc2
 
 To install on R:
 
-devtools::install_bitbucket("dmisc2","dmenne")
+````R
+devtools::install_github("dmenne/dmisc2")
+````
 
 
 Dieter Menne   
