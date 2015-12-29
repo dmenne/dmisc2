@@ -14,8 +14,6 @@
 #' @import RColorBrewer
 #' @import ggplot2  
 #' @import gmodels 
-#' @import grid
-#' @import plyr 
 #' @import survival 
 
 NULL

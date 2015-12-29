@@ -4,10 +4,7 @@ Version: 0.4.0
 Imports:
     ggplot2,
     gmodels,
-    grid,
-    gridExtra,
     lattice,
-    plyr,
     RColorBrewer,
     stringr,
     survival
@@ -22,4 +19,4 @@ Description: For latex-related functions of the old Dmisc package, see Dlatex.
 Maintainer: Dieter Menne<dieter.menne@menne-biomed.de>
 License: GPL-2
 Roxygen: list(wrap = FALSE)
-RoxygenNote: 5.0.0
+RoxygenNote: 5.0.1

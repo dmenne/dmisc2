@@ -20,7 +20,7 @@ Auxillary functions, some from Stack Exchange and r-help postings.
 For some of these functions, better alternatives are meanwhile available.
 
 * Construct contrasts in Excel files (not tested on travis); quite useful if you want nicely formatted contrast tables, but only tested on Windows.
-* Kaplan-Meier with ggplot2 (Abhijit Dasgupta, Gil Tomas); for legacy only, survMisc/autoplot.survfit looks better
+* ggkm: Kaplan-Meier with ggplot2 was removed; use survMisc/autoplot.survfit instead
 * Kruschke Highest Density. Many alternatives available.
 * Pair plots splom type with categorical (http://biostatmatt.com/archives/2398). Quite nice for a first look.
 * DM's default lattice settings (the function I use most frequently)
