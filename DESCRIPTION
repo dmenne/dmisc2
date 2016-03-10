@@ -20,4 +20,4 @@ Maintainer: Dieter Menne<dieter.menne@menne-biomed.de>
 License: GPL-2
 Roxygen: list(wrap = FALSE)
 RoxygenNote: 5.0.1
-Remotes: dmenne/dmisc2
+
