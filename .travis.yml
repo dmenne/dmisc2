@@ -2,6 +2,8 @@ language: r
 sudo: false
 cache: packages
 
+r_packages: colorspace
+
 addons:
   apt:
     packages:
