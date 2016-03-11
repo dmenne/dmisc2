@@ -29,8 +29,10 @@
 #' d.lme = lme(vol~interval+peri+post+peri:interval+interval:post,
 #'             data=d,random=~1|subject)
 #' summary(d.lme)
+#' \dontrun{
 #' ct = getContrasts("peripostinterval",excelfile)
 #' estimable(d.lme,ct,conf.int=0.95)
+#' }
 #' @export
 #' @rdname getContrasts
 "getContrasts" = function(cname,excelfile,rows = NULL) {
