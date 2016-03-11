@@ -24,5 +24,5 @@ For some of these functions, better alternatives are meanwhile available.
 * Kruschke Highest Density. Many alternatives available.
 * Pair plots splom type with categorical (http://biostatmatt.com/archives/2398). Quite nice for a first look.
 * DM's default lattice settings (the function I use most frequently)
-* lattice panel with paging ([Gabor Grothendiek](http://stackoverflow.com/questions/9654244/multipage-lattice-panel-arrangement)). Still the only game in town to distribute many panels on several pages. There is no equivalent plot in ggplot2. 
+* lattice panel with paging ([Gabor Grothendiek](http://stackoverflow.com/questions/9654244/multipage-lattice-panel-arrangement)) and Aaron Rendahl. Still the only game in town to distribute many panels on several pages. There is no equivalent plot in ggplot2. 
 
