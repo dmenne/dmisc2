@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/dmenne/dmisc2.svg?branch=master)](https://travis-ci.org/dmenne/dmisc2)
-[![Coverage Status](https://coveralls.io/repos/dmenne/dmisc2/badge.svg?branch=master&service=github)](https://coveralls.io/github/dmenne/dmisc2?branch=master)
 
+[![Coverage Status](https://coveralls.io/repos/github/dmenne/dmisc2/badge.svg?branch=master)](https://coveralls.io/github/dmenne/dmisc2?branch=master)
 
 Dmisc2
 ===========================================
