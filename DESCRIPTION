@@ -13,7 +13,8 @@ Suggests:
     nlme,
     latticeExtra,
     testthat,
-    RODBC
+    RODBC,
+	covr
 Author: Dieter Menne <dieter.menne@menne-biomed.de>
 Description: For latex-related functions of the old Dmisc package, see Dlatex.
 Maintainer: Dieter Menne<dieter.menne@menne-biomed.de>
