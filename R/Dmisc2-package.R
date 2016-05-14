@@ -12,10 +12,9 @@
 #' @import stringr
 #' @import lattice
 #' @import RColorBrewer
-## Enabling the lines below will give error on travisci, but only a 
-## NOTE  locally
-## @importFrom RODBC odbcConnectExcel2007 sqlQuery odbcClose
 #' @importFrom graphics par plot text mosaicplot boxplot rect
+#' @importFrom stats na.omit
+#' @importFrom readxl read_excel
 #' @import gmodels 
 
 NULL

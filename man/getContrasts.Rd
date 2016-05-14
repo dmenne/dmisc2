@@ -10,25 +10,25 @@ getContrasts(cname, excelfile, rows = NULL)
 readContrasts(cname, excelfile)
 }
 \arguments{
-\item{cname}{named region in Excel file with contrast table}
+\item{cname}{Sheet name in Excel file}
 
 \item{excelfile}{path of Excel file with contrast table}
 
 \item{rows}{optionally only select some rows of the table}
 }
 \value{
-\code{readContrasts} read a contrast table; \code{getContrasts}
-additionally includes column and row name information to label contrast
-tables with estimable (gmodels)
+\code{readContrasts} read a contrast table. Only columns with at 
+least on period  in the header are kept. 
+\code{getContrasts} additionally includes column and row name 
+information to label contrast tables with estimable (gmodels)
 }
 \description{
-Reads contrast from an Excel file for use with \code{estimable} of package
-gmodels.
+Reads contrast from an Excel file for use with \code{estimable} 
+of package gmodels.
 }
 \examples{
 library(nlme)
 library(gmodels)
-library(RODBC)
 options(digits=3)
 set.seed(4711)
 excelfile = system.file("extdata", "contrasts.xlsx", package = "Dmisc2")
@@ -40,10 +40,8 @@ d$vol = round(rnorm(nrow(d),10,2),1)
 d.lme = lme(vol~interval+peri+post+peri:interval+interval:post,
             data=d,random=~1|subject)
 summary(d.lme)
-\dontrun{
 ct = getContrasts("peripostinterval",excelfile)
 estimable(d.lme,ct,conf.int=0.95)
-}
 }
 \author{
 Dieter Menne, \email{dieter.menne@menne-biomed.de}

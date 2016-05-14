@@ -5,11 +5,6 @@ cache: packages
 r_packages:
   - colorspace
 
-addons:
-  apt:
-    packages:
-    - unixodbc-dev
-
 r-github-packages:
   - jimhester/covr
 

@@ -6,7 +6,7 @@ Imports:
     lattice,
     RColorBrewer,
     stringr,
-    RODBC
+    readxl
 Suggests:
     MASS,
     latticeExtra,

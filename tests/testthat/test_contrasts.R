@@ -8,9 +8,6 @@ test_that("Excel test file exists", {
   expect_true(file.exists(excelfile))
 })
 
-skip_on_travis()
-library(RODBC)
-
 test_that("Reading valid file with readContrast returns contrast table", {
   skip_on_travis()
   ct = readContrasts(cname,excelfile)
@@ -27,8 +24,8 @@ test_that("Reading invalid file name throws", {
 
 test_that("Reading invalid range name throws", {
   skip_on_travis()
-  expect_error(readContrasts("blub",excelfile),"Range blub not found")
-  expect_error(getContrasts("blub",excelfile),"Range blub not found")
+  expect_error(readContrasts("blub",excelfile),"Sheet blub not found")
+  expect_error(getContrasts("blub",excelfile),"Sheet blub not found")
 })
 
 test_that("Reading valid file with getContrast returns contrast table with attributes", {
