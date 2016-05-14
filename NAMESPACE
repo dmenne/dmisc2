@@ -2,7 +2,6 @@
 
 export(DMPalette)
 export(DMlatticeOptions)
-export(HDIofMCMC)
 export(RemoveNAColumns)
 export(RemoveNARows)
 export(getContrasts)

@@ -8,6 +8,9 @@ test_that("Excel test file exists", {
   expect_true(file.exists(excelfile))
 })
 
+skip_on_travis()
+library(RODBC)
+
 test_that("Reading valid file with readContrast returns contrast table", {
   skip_on_travis()
   ct = readContrasts(cname,excelfile)
