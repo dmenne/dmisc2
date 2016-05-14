@@ -12,9 +12,9 @@
 #' @import stringr
 #' @import lattice
 #' @import RColorBrewer
-#' @import ggplot2  
+#' @importFrom RODBC odbcConnectExcel2007 sqlQuery odbcClose
+#' @importFrom graphics par plot text mosaicplot boxplot rect
 #' @import gmodels 
-#' @import survival 
 
 NULL
 

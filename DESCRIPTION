@@ -1,22 +1,20 @@
 Package: Dmisc2
 Title: Dieter Menne's Misc Functions
-Version: 0.5.1
+Version: 0.6.0
 Imports:
-    ggplot2,
     gmodels,
     lattice,
     RColorBrewer,
     stringr,
-    survival
+    RODBC
 Suggests:
     MASS,
-    nlme,
     latticeExtra,
     testthat,
-    RODBC,
-	covr
+    nlme,
+  	covr
 Author: Dieter Menne <dieter.menne@menne-biomed.de>
-Description: For latex-related functions of the old Dmisc package, see Dlatex.
+Description: For latex-related functions,  see package Dlatex.
 Maintainer: Dieter Menne<dieter.menne@menne-biomed.de>
 License: GPL-2
 Roxygen: list(wrap = FALSE)
