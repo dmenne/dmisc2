@@ -17,7 +17,7 @@ http://www.menne-biomed.de
 dieter.menne@menne-biomed.de 
 
 Auxillary functions, some from Stack Exchange and r-help postings.
-For some of these functions, better alternatives are meanwhile available.
+Some of the functions have been removed because better alternatives are available.
 
 * Construct contrasts in Excel files (not tested on travis); quite useful if you want nicely formatted contrast tables, but only tested on Windows. 
 * Pair plots splom type with categorical (http://biostatmatt.com/archives/2398). Quite nice for a first look.
@@ -29,4 +29,8 @@ For some of these functions, better alternatives are meanwhile available.
 * (use survMisc/autoplot.survfit) ggkm: Kaplan-Meier with ggplot2 was removed.
 * (use package HDinterval)Kruschke Highest Density interval
 
+
+## Breaking changes in >= 0.6.0
+
+The dependency on RODBC to read Excel files was removed; `read_excel` from package ` readxl` is used instead for `readContrasts` and `getContrasts`. `read_excel` does not know about named ranges, therefore the name of the worksheet must be passed now instead of the name of it.
 
