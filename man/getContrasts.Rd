@@ -17,13 +17,13 @@ readContrasts(cname, excelfile)
 \item{rows}{optionally only select some rows of the table}
 }
 \value{
-\code{readContrasts} read a contrast table. Only columns with at 
-least on period  in the header are kept. 
-\code{getContrasts} additionally includes column and row name 
+\code{readContrasts} read a contrast table. Only columns with at
+least on period  in the header are kept.
+\code{getContrasts} additionally includes column and row name
 information to label contrast tables with estimable (gmodels)
 }
 \description{
-Reads contrast from an Excel file for use with \code{estimable} 
+Reads contrast from an Excel file for use with \code{estimable}
 of package gmodels.
 }
 \examples{

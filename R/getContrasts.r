@@ -1,15 +1,15 @@
 #' @title Read and format contrast tables from Excel
 #'
-#' @description Reads contrast from an Excel file for use with \code{estimable} 
+#' @description Reads contrast from an Excel file for use with \code{estimable}
 #' of package gmodels.
 #'
 #' @aliases getContrasts readContrasts
 #' @param cname Sheet name in Excel file
 #' @param excelfile path of Excel file with contrast table
 #' @param rows optionally only select some rows of the table
-#' @return \code{readContrasts} read a contrast table. Only columns with at 
-#' least on period  in the header are kept. 
-#' \code{getContrasts} additionally includes column and row name 
+#' @return \code{readContrasts} read a contrast table. Only columns with at
+#' least on period  in the header are kept.
+#' \code{getContrasts} additionally includes column and row name
 #' information to label contrast tables with estimable (gmodels)
 #' @author Dieter Menne, \email{dieter.menne@@menne-biomed.de}
 #' @keywords models
@@ -44,7 +44,8 @@
   colnames(vars) =  varnames
 
   cn_1 = as.data.frame(t(as.matrix(cn[,-1])))
-  colnames(cn_1) = cn[,1]
+  # must use [[ ]] because this is a tibble, and does not drop
+  colnames(cn_1) = cn[[1]]
 
   attr(cn_1,"vars") = data.frame(vars[-1,])
   attr(cn_1,"varnames") = varnames
