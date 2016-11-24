@@ -31,6 +31,7 @@
 #' summary(d.lme)
 #' ct = getContrasts("peripostinterval",excelfile)
 #' estimable(d.lme,ct,conf.int=0.95)
+#' @import readxl
 #' @export
 #' @rdname getContrasts
 "getContrasts" = function(cname,excelfile,rows = NULL) {
