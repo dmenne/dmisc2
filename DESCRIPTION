@@ -1,6 +1,6 @@
 Package: Dmisc2
 Title: Dieter Menne's Misc Functions
-Version: 0.6.0
+Version: 0.6.1
 Imports:
     gmodels,
     lattice,
