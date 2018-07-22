@@ -35,10 +35,9 @@ p <- useOuterStrips(p)
 p <- update(p, layout=c(5,3)) # plotting from here on gives a warning
 suppressWarnings(plot(p, packet.panel=packet.panel.bycolumn))
 }
-\author{
-Dieter Menne, \email{dieter.menne@menne-biomed.de}
-}
 \seealso{
 \code{\link[lattice]{packet.panel.default}}
 }
-
+\author{
+Dieter Menne, \email{dieter.menne@menne-biomed.de}
+}

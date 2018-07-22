@@ -29,4 +29,3 @@ pairsdf(coop[,2:4])
 \author{
 Biostatmat, \url{http://biostatmatt.com/archives/2398}
 }
-

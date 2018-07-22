@@ -43,12 +43,11 @@ summary(d.lme)
 ct = getContrasts("peripostinterval",excelfile)
 estimable(d.lme,ct,conf.int=0.95)
 }
-\author{
-Dieter Menne, \email{dieter.menne@menne-biomed.de}
-}
 \seealso{
 See \code{constrast.xlsx} in the extdata directory for some
 rules of thumb on constructing a contrast matrix.
 }
+\author{
+Dieter Menne, \email{dieter.menne@menne-biomed.de}
+}
 \keyword{models}
-

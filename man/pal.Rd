@@ -23,4 +23,3 @@ lapply(Palettes,function(x) pal(DMPalette(x)))
 \author{
 Dieter Menne, \email{dieter.menne@menne-biomed.de}
 }
-

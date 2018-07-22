@@ -16,4 +16,3 @@ exception if the directory could not be created
 \description{
 Raises if creation was not successful
 }
-

@@ -12,4 +12,3 @@ DMPalette(palette = NULL)
 \description{
 Some fixed palettes
 }
-

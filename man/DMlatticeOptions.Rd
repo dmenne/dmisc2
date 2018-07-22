@@ -24,4 +24,3 @@ Set default lattice options, e.g. for use by Sweave.
 \author{
 Dieter Menne, \email{dieter.menne@menne-biomed.de}
 }
-
