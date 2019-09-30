@@ -58,7 +58,7 @@
   function(cname,excelfile) {
     if (!file.exists(excelfile))
       stop(str_c("Contrast file <<",excelfile,">> not found"))
-    cn = try(read_excel(excelfile, cname), silent = TRUE)
+    cn = try(read_excel(excelfile, cname, trim_ws=TRUE), silent = TRUE)
     if (!inherits(cn, "data.frame"))
       stop(str_c("Sheet ",cname," not found in file ",excelfile))
     # Remove lines without . in header

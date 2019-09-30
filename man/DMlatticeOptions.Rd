@@ -4,8 +4,9 @@
 \alias{DMlatticeOptions}
 \title{Dieter's default lattice options}
 \usage{
-DMlatticeOptions(superpose.polygon.col = NULL, superpose.line.col = NULL,
-  par.strip.text.cex = NULL, transparent.strip = FALSE)
+DMlatticeOptions(superpose.polygon.col = NULL,
+  superpose.line.col = NULL, par.strip.text.cex = NULL,
+  transparent.strip = FALSE)
 }
 \arguments{
 \item{superpose.polygon.col}{a palette for polygon colors, e.g.
